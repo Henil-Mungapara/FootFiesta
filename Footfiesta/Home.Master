@@ -52,7 +52,7 @@
                                 <div action="#" class="search-wrap">
                                     <div class="form-group">
                                         <input type="search" class="form-control search" placeholder="Search">
-                                        <button class="btn btn-primary submit-search text-center" type="submit"><i class="icon-search"></i></button>
+                                       <%-- <button class="btn btn-primary submit-search text-center" type="submit"><i class="icon-search"></i></button>--%>
                                     </div>
                                 </div>
                             </div>

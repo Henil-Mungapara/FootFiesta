@@ -59,7 +59,7 @@
                                     <div class="form-group">
                                         <label for="message">Enter Password</label>
                                         <br />
-                                        <asp:TextBox ID="message" class="form-control" runat="server" placeholder="Enter Password" Height="95px"></asp:TextBox>
+                                        <asp:TextBox ID="message" class="form-control" TextMode="MultiLine" Rows="5" runat="server" placeholder="Enter Password" Height="95px"></asp:TextBox>
                                         <br />
 
                                     </div>

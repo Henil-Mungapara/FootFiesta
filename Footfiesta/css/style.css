@@ -10248,14 +10248,15 @@ h1, h2, h3, h4, h5,
     height: 40px;
     padding-left: 1em;
     padding-right: 4.5em;
-    -webkit-border-radius: 30px;
+    /*-webkit-border-radius: 30px;
     -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
+    -ms-border-radius: 30px;*/
     border-radius: 30px;
+  
 }
 
     .colorlib-nav .top-menu .search-wrap .search:focus {
-        border: 1px solid #e6e6e6 !important;
+        border: 3px solid #e6e6e6;
     }
 
 .colorlib-nav .top-menu .search-wrap .submit-search {

@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <p class="bread"><span><a href="index.html">Home</a></span> / <span>Contact</span></p>
+                    <p class="bread"><span><a href="Home.aspx">Home</a></span> / <span>Contact</span></p>
                 </div>
             </div>
         </div>
@@ -44,13 +44,13 @@
                 <div class="col-md-6">
                     <div class="contact-wrap">
                         <h3>Get In Touch</h3>
-                        <form action="#" class="contact-form">
+                        <div action="#" class="contact-form">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="fname">First Name</label>
                                         <br />
-                                        <asp:TextBox ID="fname" class="form-control" placeholder="Enter your First Name" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="contectfirstname" class="form-control" placeholder="Enter your First Name" runat="server"></asp:TextBox>
                                         &nbsp;
                                     </div>
                                 </div>
@@ -58,7 +58,7 @@
                                     <div class="form-group">
                                         <label for="lname">Last Name</label>
                                         <br />
-                                        <asp:TextBox ID="lname" class="form-control" placeholder="Enter your Last Name" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="contectlastname" class="form-control" placeholder="Enter your Last Name" runat="server"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -66,7 +66,7 @@
                                     <div class="form-group">
                                         <label for="email">Email</label>
                                         <br />
-                                        <asp:TextBox ID="email" class="form-control" placeholder="Enter your E-Mail Id" runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="contectemailid" class="form-control" placeholder="Enter your E-Mail Id" runat="server"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="w-100"></div>
@@ -74,7 +74,7 @@
                                     <div class="form-group">
                                         <label for="subject">Subject</label>
                                         <br />
-                                        <asp:TextBox ID="subject" class="form-control" placeholder="Enter your Subject " runat="server"></asp:TextBox>
+                                        <asp:TextBox ID="contectsubject" class="form-control" placeholder="Enter your Subject " runat="server"></asp:TextBox>
                                         &nbsp;
                                     </div>
                                 </div>
@@ -83,7 +83,7 @@
                                     <div class="form-group">
                                         <label for="message">Message</label>
                                         <br />
-                                        <asp:TextBox ID="message" class="form-control" runat="server" placeholder="Message !" Height="95px"></asp:TextBox>
+                                        <asp:TextBox ID="contectmessage" class="form-control" runat="server" placeholder="Message !" Height="95px"></asp:TextBox>
                                         <br />
 
                                     </div>
@@ -91,11 +91,11 @@
                                 <div class="w-100"></div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        &nbsp;<asp:Button ID="Button1" runat="server" Text="Send Message" class="btn btn-primary" />
+                                        &nbsp;<asp:Button ID="contectsubmit" runat="server" Text="Send Message" class="btn btn-primary" OnClick="contectsubmit_Click" />
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
