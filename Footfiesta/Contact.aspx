@@ -91,9 +91,51 @@
                                 <div class="w-100"></div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
-                                        &nbsp;<asp:Button ID="contectsubmit" runat="server" Text="Send Message" class="btn btn-primary" OnClick="contectsubmit_Click" />
+                                        &nbsp;<asp:Button ID="contectsubmit" runat="server" Text="Submit" class="btn btn-primary" OnClick="contectsubmit_Click" />
                                     </div>
                                 </div>
+                                <br />
+                                <br />
+                                <br />
+                                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" OnRowCommand="GridView1_RowCommand">
+                                    <Columns>
+                                        <asp:TemplateField HeaderText="FirstName">
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label1" runat="server" Text='<%# Eval("FirstName") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="LastName">
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label2" runat="server" Text='<%# Eval("LastName") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="EMail-Id">
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label3" runat="server" Text='<%# Eval("Email-Id") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Subject">
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label4" runat="server" Text='<%# Eval("Subject") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Message">
+                                            <ItemTemplate>
+                                                <asp:Label ID="Label5" runat="server" Text='<%# Eval("Message") %>'></asp:Label>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Update">
+                                            <ItemTemplate>
+                                                <asp:LinkButton ID="LinkButton1" runat="server" CommandArgument='<%# Eval("Contect_Id") %>' CommandName="Cmd_Update">Update</asp:LinkButton>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                        <asp:TemplateField HeaderText="Delete">
+                                            <ItemTemplate>
+                                                <asp:LinkButton ID="LinkButton2" runat="server" CommandArgument='<%# Eval("Contect_Id") %>' CommandName="Cmd_Delete">Delete</asp:LinkButton>
+                                            </ItemTemplate>
+                                        </asp:TemplateField>
+                                    </Columns>
+                                </asp:GridView>
                             </div>
                         </div>
                     </div>

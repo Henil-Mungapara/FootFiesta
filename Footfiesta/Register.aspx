@@ -77,6 +77,8 @@
                 <div class="col-md-6">
                     <div id="map" class="colorlib-map"></div>
                 </div>
+                <br />
+                <br />
             </div>
         </div>
     </div>
